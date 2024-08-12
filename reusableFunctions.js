@@ -46,3 +46,24 @@ console.log(" ")
 console.log('Given Array is : numArray2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]')
 returnAverage(numArray2);
 
+// 3) Take an array of strings and return the longest string.
+
+let stringArray =['abcdefg', 'abc', 'abcdef', 'abcdefghi', 'a']
+
+function longestString() {
+    let longestString = "";
+    for (let i = 0; i < stringArray.length; i++) {
+        if (
+            typeof stringArray[i] === "string" &&
+            stringArray[i].length > longestString.length
+        ) {
+            longestString = stringArray[i];
+        }
+    }
+    return longestString;
+}
+
+let longestStringIs = longestString(stringArray)
+console.log(" ")
+console.log("Given Array is : stringArray = ['abcdefg', 'abc', 'abcdef', 'abcdefghi', 'a']")
+console.log(`Average of given array is = ${longestStringIs}`)
