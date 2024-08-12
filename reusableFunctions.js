@@ -67,3 +67,25 @@ let longestStringIs = longestString(stringArray)
 console.log(" ")
 console.log("Given Array is : stringArray = ['abcdefg', 'abc', 'abcdef', 'abcdefghi', 'a']")
 console.log(`Average of given array is = ${longestStringIs}`)
+
+
+// 4) Take an array of strings, and a number and return an array of the strings that are longer than the given number.
+
+let stringArray1 =[['abcdefg', 'abc', 'abcdef', 'abcdefghi', 'a', 'ab'],3]
+
+
+function compareString(array) {
+    let num = array[1]   
+    let stringLength = [];    
+    for (let i = 0; i < array[0].length; i++) {                
+        if (array[0][i].length > num ) {
+            stringLength.push(" " +array[0][i]+ " ") ;
+        }
+    }
+    return stringLength;
+}
+
+let compareStringArray = compareString(stringArray1)
+console.log(" ")
+console.log("Given Array is : stringArray1 = ['abcdefg', 'abc', 'abcdef', 'abcdefghi', 'a', 'ab']")
+console.log(`Strings in array greater than given number (3) is = ${compareStringArray}`)
