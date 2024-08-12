@@ -6,6 +6,9 @@
 // Take a number, n, and print every number between 1 and n without using loops. Use recursion.
 
 
+
+
+// 1 ) Take an array of numbers and return the sum.
 let numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function returnSum(array) {
@@ -19,5 +22,27 @@ function returnSum(array) {
     console.log(`Sum of given array is = ${sum}`)
 }
 
+console.log(" ")
 console.log('Given Array is : numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]')
-let sumArray = returnSum(numArray);
+returnSum(numArray);
+
+
+
+// 2) Take an array of numbers and return the average.
+
+let numArray2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function returnAverage(array) {
+    let sum = 0;
+        for (let i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        let average = (sum/array.length)
+
+    console.log(`Average of given array is = ${average}`)
+}
+
+console.log(" ")
+console.log('Given Array is : numArray2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]')
+returnAverage(numArray2);
+
