@@ -14,7 +14,7 @@ let numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function returnSum(array) {
     let sum = 0;
     for (let i in array) {
-        if (array[i] % 2 != 0) {
+        if (array[i] != 0) {
             sum += array[i];
         }
     }
