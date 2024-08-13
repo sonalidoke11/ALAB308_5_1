@@ -89,3 +89,17 @@ let compareStringArray = compareString(stringArray1)
 console.log(" ")
 console.log("Given Array is : stringArray1 = ['abcdefg', 'abc', 'abcdef', 'abcdefghi', 'a', 'ab']")
 console.log(`Strings in array greater than given number (3) is = ${compareStringArray}`)
+
+
+//5) Take a number, n, and print every number between 1 and n without using loops. Use recursion.
+
+function printNumbers(number){
+    let val = 1;
+    if(number>0){
+        printNumbers(number-1);  
+        console.log(number); 
+    }  
+    return 
+}
+
+printNumbers(6)
